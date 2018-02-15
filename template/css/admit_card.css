@@ -1,0 +1,96 @@
+body {
+	text-align: center;
+}
+.admit_card {
+    background: #999999;
+    color: black;
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+
+}
+.admit_card .container {
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    width: 841.89px;
+    height: 404px;
+  	margin: 0 auto;
+  	background-color: white;
+  	margin-bottom: 20px;
+/*    background: white url("../images/admit_card/border.svg") top no-repeat;
+    background-size: 100%;
+*/
+}
+.admit_card .wraper { padding: 45px; }
+.admit_card .wraper h1 {
+    margin-bottom: 0px;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 26px;
+}
+.admit_card .wraper hr {
+    padding: 0;
+    margin: 2px 2px;
+    width: 80%;
+}
+.admit_card .wraper .student_images {
+    float: left;
+    height: 100%;
+    margin: 3px 10px 0px 0px;
+}
+.admit_card .wraper table {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 14px;
+    line-height: 13px;
+    text-align: left;
+}
+.admit_card .wraper table td:first-child{
+    padding-right: 10px;
+}
+.granted_date { 
+    font-size: 14px;
+	font-weight: bolder;
+	float: left;
+	margin-left: 171px;
+	margin-top: 5px;
+}
+
+.admit_card .wraper .signature { margin-top: 60px; }
+.admit_card .wraper .signature td:first-child { padding-left: 16px; }
+.admit_card .wraper .signature td:last-child { padding-right: 16px; }
+
+@media print{
+	
+	.a4
+	{
+		height:11.7in;
+		width:8.27in;
+		margin:0;
+		padding:0;
+		border:0px dashed #000000;
+	}
+
+    .a4-landscape
+	{
+		margin: 0 auto;
+		height:8.27in;
+		width:11.2in;
+		padding:0;
+		border:0px dashed #000000;
+		margin-top:3px;
+	}
+
+	.admit_card {
+	    background: none;
+	}
+
+    .admit_card .wraper table {
+        line-height: 12px !important;
+    }
+
+    .admit_card .container {
+    box-shadow: none;
+	}
+	   
+}
